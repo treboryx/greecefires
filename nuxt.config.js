@@ -35,7 +35,7 @@ export default {
       {
         hid: "og:description",
         property: "og:description",
-        content: "FTTx Cabinets Map. Έλεγχος διαθεσιμότητας VDSL"
+        content: "Map with fires in Greece - Φωτιες στην Ελλαδα"
       },
       {
         property: "og:url",
@@ -53,7 +53,7 @@ export default {
       {
         hid: "twitter:description",
         name: "twitter:description",
-        content: "FTTx Cabinets Map. Έλεγχος διαθεσιμότητας VDSL"
+        content: "Map with fires in Greece - Φωτιες στην Ελλαδα"
       },
       {
         hid: "twitter:image",
