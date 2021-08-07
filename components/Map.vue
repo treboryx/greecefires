@@ -56,13 +56,6 @@ export default {
   async mounted() {
     if (localStorage.center) {
       this.myCoordinates = JSON.parse(localStorage.center);
-    } else {
-      // get user's coordinates from browser request
-      this.$getLocation({})
-        .then(coordinates => {
-          this.myCoordinates = coordinates;
-        })
-        .catch(error => console.log(error));
     }
 
     // does the user have a saved zoom? use it instead of the default
