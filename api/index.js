@@ -17,8 +17,8 @@ const bree = new Bree({
   // logger: cabin, // debugging only
   jobs: [
     {
-      name: "fires"
-      // interval: "30s"
+      name: "fires",
+      interval: "2h"
     }
   ]
 });

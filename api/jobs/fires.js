@@ -49,11 +49,6 @@ if (parentPort) {
       crg.get_country(e.lat, e.lng) &&
       crg.get_country(e.lat, e.lng).name === "Greece"
   );
-  //   console.log(result)
-  //   result.forEach(async e => {
-  //     const c = crg.get_country(e.lat, e.lng);
-  //     console.log(c);
-  //   });
 
   fs.writeFile("fires.json", JSON.stringify(result), function(err) {
     if (err) {
