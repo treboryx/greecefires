@@ -44,11 +44,11 @@ if (parentPort) {
     };
   });
 
-  result = result.filter(
-    e =>
-      crg.get_country(e.lat, e.lng) &&
-      crg.get_country(e.lat, e.lng).name === "Greece"
-  );
+  // result = result.filter(
+  //   e =>
+  //     crg.get_country(e.lat, e.lng) &&
+  //     crg.get_country(e.lat, e.lng).name === "Greece"
+  // );
 
   fs.writeFile("fires.json", JSON.stringify(result), function(err) {
     if (err) {
