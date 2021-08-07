@@ -32,7 +32,7 @@ export default {
         lat: 37.9432,
         lng: 23.6709
       },
-      zoom: 10,
+      zoom: 8,
       options: {
         styles: mapStyle
       },
@@ -54,15 +54,6 @@ export default {
     };
   },
   async mounted() {
-    if (localStorage.center) {
-      this.myCoordinates = JSON.parse(localStorage.center);
-    }
-
-    // does the user have a saved zoom? use it instead of the default
-    if (localStorage.zoom) {
-      this.zoom = parseInt(localStorage.zoom);
-    }
-
     // add the map to a data object
     await this.$refs.mapRef.$mapPromise.then(map => (this.map = map));
 
