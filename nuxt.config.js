@@ -66,9 +66,21 @@ export default {
         content: "https://greecefires.eu/img.jpg"
       },
       {
+        poperty: "twitter:card",
+        content: "summary_large_image"
+      },
+      {
         hid: "og:image",
         property: "og:image",
         content: "https://greecefires.eu/img.jpg"
+      },
+      {
+        property: "og:image:width",
+        content: "1920"
+      },
+      {
+        property: "og:image:height",
+        content: "1080"
       },
       {
         hid: "og:image:secure_url",
