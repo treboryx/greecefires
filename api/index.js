@@ -18,7 +18,8 @@ const bree = new Bree({
   jobs: [
     {
       name: "fires",
-      interval: "2h"
+      interval: "2h",
+      timeout: false
     }
   ]
 });
