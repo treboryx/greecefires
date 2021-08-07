@@ -43,7 +43,7 @@ export default {
       },
       {
         property: "og:site_name",
-        content: "FTTx"
+        content: "greecefires"
       },
       {
         hid: "twitter:title",
