@@ -5,6 +5,16 @@ const Graceful = require("@ladjs/graceful");
 const { Signale } = require("signale");
 const path = require("path");
 const { resolve } = require("path");
+const express = require("express");
+const { get } = require("./redis");
+const app = express();
+
+app.get("/", async (req, res) => {
+  const cache = await get("fires");
+  res
+    .status(200)
+    .json({ count: cache ? cache.length : 0, data: cache ? cache : [] });
+});
 
 const cabin = new Cabin({
   axe: {
@@ -18,8 +28,8 @@ const bree = new Bree({
   jobs: [
     {
       name: "fires",
-      interval: "2h",
-      timeout: false
+      timeout: false,
+      interval: "2h"
     }
   ]
 });
@@ -30,3 +40,14 @@ graceful.listen();
 
 // start all jobs (this is the equivalent of reloading a crontab):
 bree.start();
+
+module.exports = app;
+
+// Start standalone server if directly running
+if (require.main === module) {
+  const port = process.env.PORT || 5001;
+  app.listen(port, () => {
+    // eslint-disable-next-line no-console
+    console.log(`API server listening on port ${port}`);
+  });
+}

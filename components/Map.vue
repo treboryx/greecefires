@@ -21,12 +21,11 @@
 <script>
 import * as MarkerClusterer from "marker-clusterer-plus";
 import { mapStyle } from "../static/options";
-import fires from "../fires.json";
 
 export default {
+  props: ["fires"],
   data() {
     return {
-      fires,
       map: null,
       myCoordinates: {
         lat: 37.9432,

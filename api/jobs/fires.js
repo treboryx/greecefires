@@ -4,7 +4,7 @@ const Cabin = require("cabin");
 const fetch = require("node-fetch");
 const { Signale } = require("signale");
 const crg = require("country-reverse-geocoding").country_reverse_geocoding();
-
+const { redis } = require("../redis");
 const cabin = new Cabin({
   axe: {
     logger: new Signale()
@@ -50,11 +50,13 @@ if (parentPort) {
   //     crg.get_country(e.lat, e.lng).name === "Greece"
   // );
 
-  fs.writeFile("fires.json", JSON.stringify(result), function(err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+  redis.set("fires", JSON.stringify(result));
+
+  // fs.writeFile("./api/fires.json", JSON.stringify(result), function(err) {
+  //   if (err) {
+  //     console.log(err);
+  //   }
+  // });
   if (parentPort) parentPort.postMessage("done");
   else process.exit(0);
 })();
