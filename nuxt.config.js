@@ -142,9 +142,15 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    "@nuxtjs/axios"
+    "@nuxtjs/axios",
+    "@nuxtjs/sitemap"
     // Doc: https://http.nuxtjs.org
   ],
+
+  sitemap: {
+    hostname: "https://greecefires.eu",
+    gzip: true
+  },
 
   /*
    ** Server Middleware
