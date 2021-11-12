@@ -12,7 +12,7 @@
     "@ladjs/graceful": "^1.0.5",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/sitemap": "^2.4.0",
-    "bree": "^6.4.0",
+    "bree": "^7.1.0",
     "cabin": "^9.0.4",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.5",
