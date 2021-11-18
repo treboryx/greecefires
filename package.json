@@ -15,7 +15,7 @@
     "bree": "^7.1.0",
     "cabin": "^9.0.4",
     "colors": "^1.4.0",
-    "cookie-parser": "^1.4.5",
+    "cookie-parser": "^1.4.6",
     "country-reverse-geocoding": "^0.2.2",
     "delay": "^5.0.0",
     "express": "^4.17.1",
