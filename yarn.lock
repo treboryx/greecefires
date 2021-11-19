@@ -929,12 +929,12 @@
   resolved "https://registry.npmjs.org/@ladjs/format-util/-/format-util-1.0.4.tgz"
   integrity sha512-hZere0rUga8kTzSTFbHREXpD9E/jwi94+B5RyLAmMIzl/w/EK1z7rFEnMHzPkU4AZkL42JWSsGXoV8LXMihybg==
 
-"@ladjs/graceful@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/@ladjs/graceful/-/graceful-1.0.5.tgz"
-  integrity sha512-9PGgrRkAi2zCRfYbeZGXAerBjcDxH0KgtidnPtyFSOC7fp0eHWN7TzdWlYpBAamzIOG10Xumxe5Xq3BxhP7Jqw==
+"@ladjs/graceful@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@ladjs/graceful/-/graceful-1.1.2.tgz#f7b40a36239547866e17ff57cd1a408547f9e1a7"
+  integrity sha512-lCQXAPekggnnWl3i+Vl0f/KwXXEkOpUSmWkDrlTO4t7NzAkDXR4blRodnUcXDXyCtdZNz5He9IlWQKpgjQjxgg==
   dependencies:
-    debug "^4.2.0"
+    debug "^4.3.2"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -3499,7 +3499,7 @@ debug@^3.1.0, debug@^3.1.1:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1, debug@^4.3.2:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
