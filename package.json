@@ -31,7 +31,7 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/tailwindcss": "^4.2.1",
     "postcss": "^8.3.11",
-    "sass": "^1.43.4",
+    "sass": "^1.44.0",
     "sass-loader": "^12.3.0"
   },
   "optionalDependencies": {
