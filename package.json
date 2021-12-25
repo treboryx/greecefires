@@ -32,6 +32,8 @@
     "@nuxtjs/tailwindcss": "^4.2.1",
     "postcss": "^8.3.11",
     "sass": "^1.45.1",
+    "sass-loader": "^12.4.0"
+    "sass": "^1.45.1",
     "sass-loader": "^12.3.0"
   },
   "optionalDependencies": {
