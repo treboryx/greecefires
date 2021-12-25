@@ -929,10 +929,10 @@
   resolved "https://registry.npmjs.org/@ladjs/format-util/-/format-util-1.0.4.tgz"
   integrity sha512-hZere0rUga8kTzSTFbHREXpD9E/jwi94+B5RyLAmMIzl/w/EK1z7rFEnMHzPkU4AZkL42JWSsGXoV8LXMihybg==
 
-"@ladjs/graceful@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@ladjs/graceful/-/graceful-1.1.3.tgz#5a1d77ed3e776ca1a54e4ff9831533ad8b2775c6"
-  integrity sha512-Cqr4xmi3RlgrqmygdHKul632ZPCovknnqnh2d9bjqzyaLB1rbU8BZnNJRu3rl5iZP+OGXovdOBxYiDimURYlsQ==
+"@ladjs/graceful@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@ladjs/graceful/-/graceful-1.1.4.tgz#efbf4a75bebabff8e5b1a8effa31ac618cb14092"
+  integrity sha512-Zm8SKv0m1NX2Mn9+Aw+ylaW9G+WmYZU0IgjWu+7eoK6CAotD9HnWisWHGXE6fG5SLbpuRTYRk9jXH8oa9gqUVg==
   dependencies:
     debug "^4.3.2"
 
